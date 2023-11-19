@@ -1,0 +1,27 @@
+{
+  "name": "server-db-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-utilities": "jest utility",
+    "run-seed": "PGDATABASE=english_monarchs node seed/run-seed.js",
+    "setup-db": "psql -f ./english-monarchs.sql",
+    "nodemon": "nodemon app.js",
+    "test": "PGDATABASE=english_monarchs_test jest testing-endpoints/endpoint.test "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "format": "^0.2.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3",
+    "pg-format": "^1.0.4",
+    "supertest": "^6.3.3"
+  }
+}
